@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       android:layout_marginStart="@dimen/common_20_dp"
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:text="@string/payment_mode"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_16_sp" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvCash"
+        android:layout_width="@dimen/common_60_dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="@dimen/common_15_dp"
+        android:layout_marginStart="@dimen/common_20_dp"
+        android:text="@string/cash"
+        android:textSize="@dimen/common_14_sp"
+        android:background="@color/btn_color"
+        android:textColor="@color/white"
+        android:padding="@dimen/common_5_dp"
+        android:gravity="center"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/tvCard"
+        android:layout_width="@dimen/common_60_dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tvCash"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        android:layout_marginTop="@dimen/common_15_dp"
+        android:layout_marginStart="@dimen/common_20_dp"
+        android:text="@string/payment_mode_card"
+        android:textSize="@dimen/common_14_sp"
+        android:background="@color/btn_color"
+        android:textColor="@color/white"
+        android:padding="@dimen/common_5_dp"
+        android:gravity="center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

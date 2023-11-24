@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvId"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="+10"
+        android:textSize="@dimen/common_16_sp"
+        android:layout_marginTop="@dimen/common_10_dp"
+        android:layout_marginStart="@dimen/common_15_dp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCountryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/common_25_dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_16_sp"
+        android:text="India"
+        android:layout_marginTop="@dimen/common_10_dp"
+        />
+
+</LinearLayout>

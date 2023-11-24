@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <color name="colorPrimary">#FD9F01</color>
+     <color name="colorPrimaryDark">#D68C0F</color>
+     <color name="colorAccent">#363F45</color>-->
+    <color name="colorOrange">#FD9F01</color>
+
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="colorPrimary">#191826</color>
+    <color name="colorPrimaryDark">#DEAC00</color>
+    <color name="colorAccent">#c1a01f</color>
+
+    <color name="colorRateBg">#F7F7F7</color>
+    <color name="colorText">#363F45</color>
+    <color name="light_brown">#747474</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="colorBackground">#F2F2F4</color>
+    <color name="color_iv_profile_border_colour">#9D9DA3</color>
+    <color name="color_iv_profile_bg">#DAD9DF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="button_color">#ff4b1e</color>
+    <color name="button_after_click">#dfc6bf</color>
+    <color name="google_botton_backround">#D34836</color>
+    <color name="facebook_botton_backround">#3B5998</color>
+    <color name="orange">#ff3516</color>
+    <color name="white_smoke">#f5f5f5</color>
+    <color name="blue">#3F51B5</color>
+    <color name="darkGrey">#747474</color>
+    <color name="grey">#A1ABB2</color>
+    <color name="lightgrey">#E1E7EB</color>
+    <color name="purple">#7745A9</color>
+    <color name="green">#03c453</color>
+    <color name="my_earning_green">#5FC62B</color>
+    <color name="red">#DF4A32</color>
+    <color name="black">#000000</color>
+    <color name="colorDefault">#fafafa</color>
+    <color name="switch_track">#CE8736</color>
+    <color name="color_spend_time">#00A0FE</color>
+    <color name="color_completed_trip">#FE9E00</color>
+
+
+    <color name="success">#47d764</color>
+    <color name="warning">#ffc021</color>
+    <color name="error">#EF5954</color>
+    <color name="info">#2f86eb</color>
+    <color name="darkGray">#A9A9A9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="chat_bg_color">#EAE7E7</color>
+    <color name="history_text_color">#747474</color>
+    <color name="green_dark">#F8057A36</color>
+
+    <color name="chat_background">#eae6e6</color>
+    <color name="desable_color">#F8DF83</color>
+
+    <color name="btn_color">#c1a01f</color>
+
+</resources>

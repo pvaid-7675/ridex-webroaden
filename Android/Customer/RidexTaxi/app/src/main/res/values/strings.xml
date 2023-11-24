@@ -1,0 +1,161 @@
+<resources>
+    <!--    <string name="app_name">Ridex</string>-->
+
+    <string name="app_name">SpeedRide</string>
+
+<!--    <string name="facebook_app_id">648550303476196</string>-->
+    <string name="facebook_app_id">1533464383807534</string>
+<!--    <string name="fb_login_protocol_scheme">fb2244552698889984</string>-->
+    <string name="fb_login_protocol_scheme">fb1533464383807534</string>
+
+    <string name="home_description">SpeedRide is a ridesharing app for fast, \nreliable rides in minutes—day or night. There"'"s no need to park or wait for a taxi or bus.</string>
+    <string name="forget_password_content">Please enter your email address, We will send you re-set password details on that email address. </string>
+
+    <string name="register">REGISTER</string>
+    <string name="login">LOGIN</string>
+
+    <string name="register_small">Register</string>
+    <string name="login_small">Login</string>
+    <string name="verify_mobile">Verify Email</string>
+    <string name="forget_password_small">Forget Password</string>
+    <string name="chat">Chat</string>
+    <string name="verify_mobile_content">Enter the OTP received on the registered Email ID</string>
+
+    <string name="password">PASSWORD</string>
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <!--    <string name="phone_numbwe_or_email">PHONE NUMBER OR EMAIL</string>-->
+    <string name="phone_numbwe_or_email">EMAIL</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="welcome_to_india">Welcome to SpeedRide</string>
+    <string name="enter_otp">enter otp.</string>
+    <string name="enter_valid_opt">enter valid otp.</string>
+    <string name="submit">SUBMIT</string>
+    <string name="or">OR</string>
+    <string name="name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="mobile">MOBILE</string>
+    <string name="mobile_number">MOBILE NUMBER</string>
+    <string name="enter_otp_text">ENTER OTP</string>
+    <string name="next">NEXT</string>
+    <!--Error strings-->
+    <string name="enter_first_name">Please enter first name.</string>
+    <string name="enter_valid_name">enter minimum 2 character.</string>
+    <string name="enter_last_name">Please enter last name.</string>
+    <string name="enter_email_id">Please enter email id.</string>
+    <string name="enter_valid_email_id">Please enter valid email id.</string>
+    <string name="enter_mobile_number">Please enter mobile number.</string>
+    <string name="enter_valid_mobile_number">Please enter valid mobile number.</string>
+    <string name="enter_password">Please enter password.</string>
+    <string name="password_length_must_be_six_character">password length must be six character.</string>
+    <string name="password_not_match">password not matching</string>
+    <string name="enter_email_or_mobile_number">enter email.</string>
+    <string name="enter_valid_email_or_mobile_number">enter valid email .</string>
+    <string name="payment_type">Payment Type</string>
+    <string name="enter_promo_code_here">ENTER PROMO CODE HERE</string>
+    <string name="done">DONE</string>
+    <string name="paypal">Paypal</string>
+    <string name="credit_debit">Credit/Debit</string>
+    <string name="cash">Cash</string>
+    <string name="select_payment_mode">SELECT PAYMENT MODE</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="save_and_verify">SAVE AND VERIFY</string>
+
+    <string name="update_mobile_number_content">We use your email &amp; mobile number to send you ride confirmations &amp; receipts</string>
+    <string name="update_phone_number">Update phone number</string>
+    <string name="success">Success</string>
+    <string name="please_select_profile_picture">Please select profile picture</string>
+    <string name="something_went_wrong">Something went to wrong. Try Again.</string>
+    <string name="please_wait_msg">Please wait..</string>
+
+    <string name="network_error">Network not available, check internet connection.</string>
+
+    <string name="choose_your_vehicle_type">Choose Your Vehicle Type</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="booking_success_content">Your booking has been confirmed. Driver will pickup you in few minutes.</string>
+    <string name="booking_cancel_content">Are you sure you want to cancel the ride?</string>
+
+    <string name="toyota_prius_gv8042_mini_white">Toyota Prius - GV8042 -\nMini - White</string>
+    <string name="booking_cancel">Booking Cancel</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="cancel_booking">CANCEL BOOKING</string>
+    <string name="emergency">Emergency</string>
+    <string name="emergency_contacts">Emergency Contacts</string>
+    <string name="sos">SOS</string>
+    <string name="share_with_friends">Share with Friends</string>
+    <string name="share">Share</string>
+    <string name="change_mode">Change Mode</string>
+    <string name="cancel">CANCEL</string>
+    <string name="verification_otp_send_to_email">Verification OTP send in your email</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="update_successfully">Update Successfully</string>
+    <string name="home">Home</string>
+    <string name="need_to_allow_permission">Need to must Allow permission</string>
+    <string name="please_select_drag_off">Please select DropOff Address</string>
+    <string name="please_select_pick_up">Please select PickUp Address</string>
+    <string name="please_select_pickup_drag_off">Please select PickUp and DropOff Address</string>
+    <string name="no_route_found">No Route found</string>
+    <string name="pick_up_location">Pick Up Location</string>
+    <string name="drag_off_location">Drag off Location</string>
+    <string name="history">History</string>
+    <string name="write_your_comment">WRITE YOUR COMMENT</string>
+    <string name="update">Update</string>
+    <string name="request_ongoing">Request On Going</string>
+    <string name="booking_successful">Booking Successful</string>
+    <string name="ok">OK</string>
+    <string name="we_find_best_driver_for_you">We find best driver for you..</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="apply_coupon">Apply Coupon</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="estimation_km">Estimation miles</string>
+    <string name="estimation_price">Estimation Price</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+    <string name="confirm_book">CONFIRM BOOK</string>
+    <string name="ride_now">RIDE NOW</string>
+    <string name="log_out">Log Out</string>
+    <string name="help">Help</string>
+    <string name="add">Add</string>
+    <string name="search">Search</string>
+    <string name="emergency_contacts_content">Let"'"s connect your friends and family to you while you are travel and make them sure that you reach your destination safely.</string>
+    <string name="add_contacts">add contacts</string>
+    <string name="make_your_ride_safe">Make your ride safe</string>
+    <string name="pls_select_contact">Please select contact</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="date_time">Date &amp; Time</string>
+
+    <string name="from">From</string>
+    <string name="source_address">Source Address</string>
+
+    <string name="destination">Destination</string>
+    <string name="destination_address">Destination Address</string>
+
+    <string name="payment_mode">Payment With</string>
+    <string name="payment_mode_cash">Cash</string>
+    <string name="payment_mode_card">Card</string>
+    <string name="google_maps_key">AIzaSyBTLVi1C91QU1CRFjKIvda53wjQUxGlEiI</string>
+
+
+    <string name="schedule_ride">Schedule RIDE</string>
+    <string name="shared_ride">Share RIDE</string>
+    <string name="schedule_ride_date_time">Schedule Date and Time
+    </string>
+    <string name="schedule">Schedule Rides</string>
+    <string name="match_password">New PassWord and Confirm Password is not same</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>
+
+

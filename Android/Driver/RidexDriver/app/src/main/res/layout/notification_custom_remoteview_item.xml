@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRateBg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_2_dp">
+
+            <ImageView
+                android:layout_width="@dimen/common_15_dp"
+                android:layout_height="@dimen/common_15_dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_person_pin" />
+
+            <TextView
+                android:id="@+id/tv_title_item_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_10_dp"
+                android:layout_marginLeft="@dimen/common_10_dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Address"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_10_sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/common_5_dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgTime"
+                    android:layout_width="@dimen/common_10_dp"
+                    android:layout_height="@dimen/common_10_dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clock" />
+
+                <TextView
+                    android:id="@+id/tv_min_time_to_pick_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_toEndOf="@id/imgTime"
+                    android:layout_toRightOf="@id/imgTime"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Min time"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/common_8_sp" />
+
+                <ImageView
+                    android:id="@+id/imgEarn"
+                    android:layout_width="@dimen/common_10_dp"
+                    android:layout_height="@dimen/common_10_dp"
+                    android:layout_below="@id/tv_min_time_to_pick_up"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:src="@drawable/ic_money_in_beg" />
+
+                <TextView
+                    android:id="@+id/tv_estimate_earn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgTime"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:layout_toEndOf="@id/imgEarn"
+                    android:layout_toRightOf="@id/imgEarn"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:text="Esti. earn"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/common_8_sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/common_2_dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_reject_item_request"
+                    android:layout_width="@dimen/common_45_dp"
+                    android:layout_height="@dimen/common_25_dp"
+                    android:layout_marginEnd="@dimen/common_10_dp"
+                    android:layout_marginRight="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_1_dp"
+                    android:background="@drawable/bg_rounded_red_border"
+                    android:gravity="center"
+                    android:padding="@dimen/common_0_1_dp"
+                    android:text="@string/reject"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/common_10_sp" />
+
+                <Button
+                    android:id="@+id/btn_accept_item_request"
+                    android:layout_width="@dimen/common_45_dp"
+                    android:layout_height="@dimen/common_25_dp"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_1_dp"
+                    android:background="@drawable/bg_rounded_green_border"
+                    android:gravity="center"
+                    android:padding="@dimen/common_0_1_dp"
+                    android:text="@string/accept"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/common_10_sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

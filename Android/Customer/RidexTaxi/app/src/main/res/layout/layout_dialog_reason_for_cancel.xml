@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/common_20_dp"
+        android:background="@color/white"
+        app:cardElevation="@dimen/common_2_dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/common_6_dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/llFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_10_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text="Reason for Cancellation"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_0_7_dp"
+                android:layout_below="@+id/llFirst"
+                android:background="@color/gray" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view1"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/common_10_dp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/rvReason"
+                        android:layout_marginBottom="@dimen/common_20_dp"
+                        android:layout_marginRight="@dimen/common_30_dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="@string/done"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/common_16_sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCancel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rvReason"
+                        android:layout_marginBottom="@dimen/common_20_dp"
+                        android:layout_marginRight="@dimen/common_15_dp"
+                        android:layout_toLeftOf="@+id/txtDone"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="@string/cancel"
+                        android:textColor="@color/light_gray"
+                        android:textSize="@dimen/common_16_sp" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

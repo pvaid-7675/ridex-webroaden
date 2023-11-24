@@ -1,0 +1,281 @@
+<resources>
+    <!--    <string name="app_name">Ridex Driver</string>-->
+    <string name="app_name">SpeedRide Driver</string>
+
+    <!-- facebook id ,        old: 726689984336673 -->
+<!--    <string name="facebook_app_id">518999020150537</string>-->
+    <string name="facebook_app_id">727352985462750</string>
+<!--    <string name="fb_login_protocol_scheme">fb1203590730257217</string>-->
+    <string name="fb_login_protocol_scheme">fb727352985462750</string>
+    <string name="facebook_client_token">00c35a379c4f2663e5a52737583fed29</string>
+
+    <string name="continue_txt">CONTINUE</string>
+    <string name="select_vehicle_type">Select vehicle type</string>
+    <string name="shift_time_title">Shift Time</string>
+    <string name="add_vehicle_details">Add vehicle details</string>
+    <string name="brand">BRAND</string>
+    <string name="model">MODEL</string>
+    <string name="year">YEAR</string>
+    <string name="color">COLOR</string>
+    <string name="interior_color">INTERIOR COLOR</string>
+
+    <string name="driving_licence">Driving Licence</string>
+    <string name="document_txt">Upload Documents</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="vehicle_insurance">Vehicle Insurance</string>
+    <string name="vehicle_registration">Vehicle Registration</string>
+
+    <!--upload document strings-->
+    <string name="please_upload_the_document_by_taking_a_picture">Please upload the document by taking a picture.</string>
+    <string name="take_photo">TAKE PHOTO</string>
+    <string name="take_a_photo_of_your_profile_photo">Take a photo of your Profile Photo</string>
+    <string name="customers_will_use_this_photo_to_identify_you_looking_friendly_makes_a_great_impression">Customers will use this photo to identify you. Looking friendly makes a great impression.</string>
+    <string name="photo_requirements">Photo Requirements:</string>
+    <string name="show_your_whole_face_and_tops_of_your_shoulders">Show your whole face and tops of your shoulders</string>
+    <string name="take_your_sunglasses_and_hat_off">Take your sunglasses and hat off</string>
+    <string name="take_your_photo_in_a_well_lit_place">Take your photo in a well-lit place</string>
+
+    <string name="motor_insurance_certificate">Motor Insurance certificate</string>
+    <string name="vehicle_insurance_long_txt">
+        Ensure all information readable and is not blurry.Make sure that all corners of the document are visible.
+        Your Document may not be accepted if it can not be read properly or all four corners are not visible.
+    </string>
+
+    <string name="contract_carriage_permit">Contract Carriage Permit</string>
+    <string name="contract_carriage_long_txt">Please Upload the document by taking a picture</string>
+
+    <string name="certificate_registration_long_txt">Ensure all information readable and is not blurry.Make sure that all corners of the document are visible.
+        Your Document may not be accepted if it can not be read properly or all four corners are not visible. </string>
+    <string name="vehicle_permit">Vehicle Permit</string>
+
+    <string name="certificate_registration">Certificate of Registration</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="share_details">Share details</string>
+    <string name="sos">SOS</string>
+    <string name="cancel">Cancel</string>
+    <string name="pickup_location">Pickup Location</string>
+    <string name="drop_off_location">Drop Off Location</string>
+    <string name="change">Change</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="complete_ride_price_6_99">Price: $6.99</string>
+
+    <!--Login/SignUp page-->
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_valid_email">Please enter valid email address</string>
+    <string name="please_enter_valid_password">Please enter at least 8 character and One capital letter,One number,One special character.</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="please_password_not_match">Passwords not match, please check</string>
+    <string name="please_enter_phone">Please enter phone number</string>
+    <string name="please_enter_valid_phone">Please enter valid phone number</string>
+    <string name="dont_have_account">Don\'t have an account? Register now</string>
+
+    <string name="loginFacebook">LOG IN WITH FACEBOOK</string>
+    <string name="loginGoogle">LOG IN WITH GOOGLE</string>
+    <string name="or">OR</string>
+
+    <string name="tearmsAndCondition">Terms and Privacy</string>
+    <string name="toAgree">By joining to agree to</string>
+    <string name="signUp">Sign Up</string>
+    <string name="sign_up_with_google">SIGN UP WITH GOOGLE</string>
+    <string name="sign_up_with_facebook">SIGN UP WITH FACEBOOK</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+
+    <string name="loading">Loading..</string>
+    <!-- Navigation text-->
+    <string name="nav_sign_out">Sign out</string>
+    <string name="nav_payment">Payment</string>
+    <string name="nav_cancel_trips">Cancel trips</string>
+    <string name="nav_completed_trips">Completed trips</string>
+    <string name="nav_accepted_trips">Accepted trips</string>
+    <string name="nav_pending_trips">Pending trips</string>
+    <string name="nav_home">Home</string>
+    <!-- toolbar text-->
+    <string name="choose_your_vehicle_type">Choose Your Vehicle Type</string>
+    <string name="pending_trips">Pending Trips</string>
+    <string name="accepted_trips">Accepted Trips</string>
+    <string name="completed_trips">Completed Trips</string>
+    <string name="cancled_trips">Cancled Trips</string>
+    <string name="txt_accepted_trip_detail">Trip details</string>
+    <string name="txt_ongoing_trip_detail">Ongoing detail</string>
+
+    <string name="update">Update</string>
+    <string name="edit_document">Edit Document</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="accept">Accept</string>
+    <string name="complete">Complete</string>
+    <string name="submit">Submit</string>
+    <string name="rate_your_trip_experience">Rate your trip experience?</string>
+    <string name="final_payable_amount">Final payable amount</string>
+    <string name="say_something_about_your_experience">Say something about your experience.</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="step_1_driving_licence">Step 1: Driving Licence</string>
+    <string name="step_2_vehicle_insurance">Step 2: Vehicle Insurance</string>
+    <string name="step_2_vehicle_permit">Step 3: Vehicle Permit</string>
+    <string name="step_4_vehicle_registration">Step 4: Vehicle Registration</string>
+    <string name="please_upload_your_vehicle_permit">Please upload your vehicle permit</string>
+    <string name="please_upload_your_vehicle_insurance">Please upload your vehicle insurance</string>
+    <string name="please_upload_your_vehicle_registration">Please upload your vehicle registration</string>
+    <string name="_1_please_upload_your_driving_licence">1. Please upload your driving licence</string>
+    <string name="getting_started">GETTING STARTED</string>
+
+    <!--Jignesh Project-->
+    <string name="home_description">SpeedRide is a ridesharing app for fast, \nreliable rides in minutes—day or night. There"'"s no need to park or wait for a taxi or bus.</string>
+    <string name="forget_password_content">Please enter your email address, We will send you re-set password details on that email address.</string>
+
+    <string name="register">Register</string>
+    <string name="login_small">Login</string>
+    <string name="verify_mobile">Verify Email</string>
+    <string name="forget_password_small">Forget Password</string>
+
+    <string name="forgot_password">FORGOT PASSWORD?</string>
+    <string name="verify_mobile_content">Enter the OTP received on the registered Email ID</string>
+    <!--    <string name="phone_number_or_email">PHONE NUMBER OR EMAIL</string>-->
+    <string name="phone_number_or_email">EMAIL</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="welcome_to_india">Welcome to SpeedRide</string>
+    <string name="enter_otp">enter otp.</string>
+    <string name="enter_valid_opt">enter valid otp.</string>
+    <string name="name">FIRST NAME</string>
+    <string name="last_name">LAST NAME</string>
+    <string name="enter_otp_text">ENTER OTP</string>
+    <string name="next">NEXT</string>
+
+    <!--Error strings-->
+    <string name="enter_minimum_2_character">enter minimum 2 character.</string>
+    <string name="enter_first_name">enter first name.</string>
+    <string name="enter_last_name">enter last name.</string>
+    <string name="enter_email_id">enter email id.</string>
+    <string name="enter_valid_email_id">enter valid email id.</string>
+    <string name="enter_mobile_number">enter mobile number.</string>
+    <string name="enter_valid_mobile_number">enter valid mobile number.</string>
+    <string name="enter_password">enter password.</string>
+    <string name="password_length_must_be_six_character">password length must be six character.</string>
+    <string name="enter_email_or_mobile_number">enter email .</string>
+    <string name="enter_valid_email_or_mobile_number">enter valid email .</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">About</string>
+    <string name="home">HOME</string>
+    <string name="earnings">EARNINGS</string>
+    <string name="ratings">RATINGS</string>
+    <string name="account">ACCOUNT</string>
+    <string name="online">ONLINE</string>
+    <string name="offline">OFFLINE</string>
+    <string name="network_error">Network not available, check internet connection.</string>
+    <string name="something_went_wrong">Something went to wrong.</string>
+    <string name="please_select_profile_picture">Please select profile picture</string>
+    <string name="please_wait_msg">Please wait..</string>
+
+    <string name="please_select_vehicle_type">Please select vehicle type</string>
+    <string name="enter_vehicle_number">enter vehicle number</string>
+    <string name="enter_vehicle_model">enter vehicle model</string>
+    <string name="enter_vehicle_brand">enter vehicle brand</string>
+    <string name="select_vehicle_year">select vehicle registration year</string>
+    <string name="select_vehicle_color">select vehicle color</string>
+    <string name="select_vehicle_interior_color">select vehicle interior color</string>
+    <string name="edit_vehicle_details">Edit Vehicle Details</string>
+    <string name="waybill">Waybill</string>
+    <string name="documents">Documents</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="help">Help</string>
+    <string name="today">Today</string>
+    <string name="weekly">Weekly</string>
+    <string name="today_s_trip">today\'s trip</string>
+    <string name="my_earning">My Earning</string>
+    <string name="spend_time">Spend Time</string>
+    <string name="completed_trip">Completed Trip</string>
+    <string name="total_fare">Total Fare</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="trip_fare">Trip fare</string>
+    <string name="tolls">Tolls</string>
+    <string name="rider_discounts">Rider discounts</string>
+    <string name="outstanding_from_last_trip">Outstanding from last trip</string>
+    <string name="cash_collected">CASH COLLECTED</string>
+    <string name="collect_cash">Collect Cash</string>
+    <string name="last_trip">Last Trip</string>
+    <string name="rate_now">RATE NOW</string>
+    <string name="need_help">NEED HELP?</string>
+    <string name="write_your_comment">WRITE YOUR COMMENT</string>
+    <string name="Distance">Distance</string>
+    <string name="pickup_request">Pickup Request</string>
+    <string name="reject">Reject</string>
+    <string name="start_trip">Start Trip</string>
+    <string name="pick_up">PICK UP</string>
+    <string name="drop_off">DROP OFF</string>
+    <string name="on_trip">On Trip</string>
+    <string name="review_your_trip">Review your trip</string>
+
+    <string name="verification_otp_send_to_email">Verification OTP send in your email</string>
+    <string name="enter_comment">Please enter some comment</string>
+    <string name="vehicle_number">VEHICLE NUMBER</string>
+    <string name="more">more</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="change_password">Change Password</string>
+
+    <string name="history">History</string>
+    <string name="shift_time">Shift Time</string>
+    <string name="weekly_trip">Weekly"'"s Trip</string>
+    <string name="get_4_digit_code_from_customer_and_start_ride">Get 6 digit code from customer and start ride..</string>
+    <string name="confirm">Confirm</string>
+    <string name="enter_passcode">Enter Passcode</string>
+    <string name="complete_trip">Complete Trip</string>
+    <string name="please_enter_passcode">Please enter pass code.</string>
+    <string name="please_enter_valid_pass_code">Please enter valid pass code.</string>
+    <string name="earned">Earned</string>
+    <string name="_0_hours_online">0 hours online</string>
+    <string name="_0_trips">0 Trips</string>
+    <string name="no_last_trip_found">No last trip found.</string>
+    <string name="_0_rs">$. 0</string>
+    <string name="cancel_trip_by_customer">Trip Cancel By Customer..</string>
+    <string name="text_of">of</string>
+    <string name="text_imageview">text_imageview</string>
+    <string name="done">Done</string>
+    <string name="resend_otp">Resend OTP ?</string>
+    <string name="excellent">Excellent</string>
+    <string name="good">Good</string>
+    <string name="average">Average</string>
+    <string name="below_average">Below Average</string>
+    <string name="poor">Poor</string>
+
+
+    <string name="demotext">Demo Text</string>
+    <string name="date_time">17 oct 2022 | 10:45 AM</string>
+    <string name="from">Ahmedabad</string>
+    <string name="source_address">Thaltej, Ahmedabad</string>
+    <string name="destination">Destination</string>
+    <string name="destination_address">Dubai mall, Saudi</string>
+    <string name="google_maps_key">AIzaSyBTLVi1C91QU1CRFjKIvda53wjQUxGlEiI</string>
+    <string name="chat">Chat</string>
+
+    <string name="employee">Employee</string>
+    <string name="contractor">Contract</string>
+
+    <string name="driver_type">Driver Type</string>
+    <string name="please_select_driver_type">Please select Driver Type</string>
+
+    <string name="shift_start_time">Shift Start Time</string>
+    <string name="shift_end_time">Shift End Time</string>
+    <string name="set_shift">Update Shift Time</string>
+    <string name="match_password">New PassWord and Confirm Password is not same</string>
+
+    <string name="delete_account">Delete Account</string>
+    <string name="location_enable_text">Please enable location to get ride from customer. Also, customer can track details where you are now in ride booked status.</string>
+    <string name="location_enable_text_background">App will use location in the background for current location update. So customer can get to know about nearby available driver(s).</string>
+    <string name="location_enable">Enable</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete_account_text">Once you will delete your account, You are not able to login to this application. Please confirm, You want to remove account from system?</string>
+    <string name="privacy_policy_text">Please read more details on </string>
+
+</resources>

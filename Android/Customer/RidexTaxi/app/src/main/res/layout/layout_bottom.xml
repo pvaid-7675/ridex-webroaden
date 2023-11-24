@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_0_7_dp"
+        android:background="@color/gray" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtEstimatedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:gravity="center"
+        android:padding="@dimen/common_5_dp"
+        android:textColor="@color/black" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_0_7_dp"
+        android:layout_below="@+id/txtEstimatedTime"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/llOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/common_5_dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEstimatedPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 Rs."
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_16_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEstimatedPriceTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_2_dp"
+                android:gravity="center"
+                android:text="@string/estimation_price"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_10_sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_1_dp"
+            android:layout_marginLeft="@dimen/common_1_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/common_5_dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEstimatedKM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 Km."
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_16_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEstimatedKMTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_2_dp"
+                android:gravity="center"
+                android:text="@string/estimation_km"
+                android:textAllCaps="true"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_10_sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTwoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llOne"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/rlPayment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_1_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="@dimen/common_5_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPaymentMode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+
+                    android:textSize="@dimen/common_14_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_2_dp"
+                    android:text="@string/payment_method"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/common_10_sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:padding="@dimen/common_5_dp"
+                android:src="@drawable/ic_edit" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlPromoCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_1_dp"
+            android:layout_marginLeft="@dimen/common_1_dp"
+            android:layout_marginTop="@dimen/common_1_dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/common_5_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCoupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/promo_code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_14_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_2_dp"
+                    android:text="@string/apply_coupon"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/common_10_sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end"
+                android:padding="@dimen/common_5_dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_edit" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_0_7_dp"
+        android:layout_below="@+id/llTwoLayout"
+        android:background="@color/gray" />
+
+</RelativeLayout>

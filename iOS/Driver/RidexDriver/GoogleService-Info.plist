@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>899030845761-oa9qpkd2mge88b3grgffvl45b8q6i0hr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.899030845761-oa9qpkd2mge88b3grgffvl45b8q6i0hr</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>899030845761-kteouc22onpepivk225gqedeqhcf2v3q.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB9IAm6pi7Hz_s0m8nUDUMJJvgg9E2_A5o</string>
+	<key>GCM_SENDER_ID</key>
+	<string>899030845761</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.speedride.driver</string>
+	<key>PROJECT_ID</key>
+	<string>speedridedriver</string>
+	<key>STORAGE_BUCKET</key>
+	<string>speedridedriver.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:899030845761:ios:8f9470cfcb50ebc237b9c0</string>
+</dict>
+</plist>

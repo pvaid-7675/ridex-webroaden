@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "899030845761",
+    "project_id": "speedridedriver",
+    "storage_bucket": "speedridedriver.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899030845761:android:435cb623490ae71e37b9c0",
+        "android_client_info": {
+          "package_name": "com.speedride.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899030845761-kteouc22onpepivk225gqedeqhcf2v3q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.speedride.driver",
+            "certificate_hash": "dc4ec9523c3dc31d864647bc69251d3664ece4b0"
+          }
+        },
+        {
+          "client_id": "899030845761-t50dufauh200jkuc1hr61poulnv8h2ej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfiD4VQZExbNYrvKcuH1k5aoq8JbDsbMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899030845761-t50dufauh200jkuc1hr61poulnv8h2ej.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

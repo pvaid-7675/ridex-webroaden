@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llEmergencyContacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/common_10_dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_10_dp"
+            android:layout_marginLeft="@dimen/common_10_dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/imgUserIcon"
+                android:layout_width="@dimen/common_50_dp"
+                android:layout_height="@dimen/common_50_dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_driver_profile"
+                app:riv_border_color="@color/colorDefault"
+                app:riv_border_width="@dimen/common_1_dp"
+                app:riv_oval="true" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_16_dp"
+            android:layout_marginLeft="@dimen/common_16_dp"
+            android:layout_marginEnd="@dimen/common_7_dp"
+            android:layout_marginRight="@dimen/common_7_dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_16_sp"
+                app:fontFamily="@font/nunito_semibold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtUserName"
+                android:layout_marginTop="@dimen/common_7_dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito_light"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_12_sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_unselected"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_14_sp"
+                app:fontFamily="@font/nunito_semibold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_0_1_dp"
+        android:background="@color/gray" />
+</LinearLayout>

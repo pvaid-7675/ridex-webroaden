@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.speedride.customer.base.modules.login.view.activity.UpdatePhoneNumberActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_16_dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/common_177_dp"
+                android:layout_height="@dimen/common_177_dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/common_25_dp"
+                android:src="@drawable/mobile_number_update_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_25_dp"
+
+                android:gravity="center"
+                android:text="@string/update_mobile_number_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_14_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_25_dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/textViewStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtMobile"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="10" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_0_5_dp"
+                    android:layout_marginTop="@dimen/common_5_dp"
+                    android:background="@color/colorText" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSaveAndVerify"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_25_dp"
+                android:text="@string/save_and_verify" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

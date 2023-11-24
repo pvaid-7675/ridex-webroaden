@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC600</color>
+    <color name="colorPrimaryDark">#DEAC00</color>
+<!--    testing... Payal Comment this-->
+<!--    <color name="colorAccent">#FF4A01</color>`-->
+    <color name="colorAccent">#DEAC00</color>`
+
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="colorText">#363F45</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gray">#BDBDBD</color>
+    <color name="blue">#3B5999</color>
+    <color name="red">#DF4A32</color>
+    <color name="light_gray">#747474</color>
+
+    <color name="green">#27AA0A</color>
+    <color name="colorDefault">#fafafa</color>
+    <color name="edit_profile">#FEBC4D</color>
+
+    <color name="colorLightGray">#F6F6F6</color>
+    <color name="colorRateBg">#F7F7F7</color>
+
+    <color name="color_snackbar_success">#04AD5F</color>
+    <color name="color_snackbar_failure">#ff4820</color>
+    <color name="color_snackbar_warning">#E89F25</color>
+
+    <color name="bg_color">#191826</color>
+
+    <color name="btn_color">#c1a01f</color>
+
+    <color name="txt_color">#ffffff</color>
+    <color name="green_dark">#F8057A36</color>
+    <color name="history_text_color">#747474</color>
+    <color name="chat_bg_color">#EAE7E7</color>
+
+    <color name="chat_background">#eae6e6</color>
+
+</resources>

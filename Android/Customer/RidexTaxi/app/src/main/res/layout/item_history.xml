@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="#EAE7E7"
+        app:cardElevation="@dimen/common_3_dp"
+        app:cardUseCompatPadding="true"
+        android:shape="ring"
+        app:cardCornerRadius="@dimen/common_200_dp"
+        app:cardBackgroundColor="@color/colorTransparent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAE7E7"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llDriverDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_10_dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/imgDriver"
+                    android:layout_width="@dimen/common_70_dp"
+                    android:layout_height="@dimen/common_70_dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/taxi_driver"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="@dimen/common_1_dp"
+                    app:riv_oval="true" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDriverName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Allen Chandler"
+                        android:textColor="@color/colorText"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/common_16_sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="110dp"
+                        android:layout_height="@dimen/common_30_dp"
+                        android:fontFamily="@font/nunito"
+                        android:gravity="center"
+                        android:text="Completed"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="@dimen/common_10_dp"
+                        android:paddingEnd="@dimen/common_10_dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/bg_rounded_corner_green"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/common_12_sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCarName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDriverName"
+                        android:layout_marginStart="@dimen/common_10_dp"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="Vehicle name"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/common_10_sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtVehicleName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtDriverName"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="@font/nunito_light"
+                        android:text="GJ 04 AB1234"
+                        android:layout_marginTop="@dimen/common_10_dp"
+                        android:textSize="@dimen/common_10_sp"
+                        android:textColor="@color/black"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_0_7_dp"
+                android:background="@color/gray" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_15_dp"
+                android:layout_marginEnd="@dimen/common_15_dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_15_dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/common_30_dp"
+                        android:layout_height="@dimen/common_30_dp"
+                        android:src="@drawable/location"
+                        android:scaleType="fitXY" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtKm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_2_dp"
+                        android:text="20.5Km"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="63dp"
+                    android:layout_marginStart="@dimen/common_20_dp"
+                    android:layout_marginTop="@dimen/common_15_dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/common_30_dp"
+                        android:layout_height="@dimen/common_30_dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/time" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_2_dp"
+                        android:text="1hr 20 min"
+                        android:textColor="@color/black"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_15_dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/common_20_dp"
+                    android:orientation="vertical">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/common_30_dp"
+                        android:layout_height="@dimen/common_30_dp"
+                        android:src="@drawable/ic_card"
+                        android:scaleType="fitXY" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/common_2_dp"
+                        android:text="$25"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:layout_marginStart="@dimen/common_45_dp"
+                android:layout_marginEnd="@dimen/common_15_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_14_sp"
+                    android:text="@string/date_time"
+                    android:textColor="@color/history_text_color"
+                    android:layout_gravity="start"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="17 Oct 2022  | 10:45 AM"
+                        android:textColor="@color/history_text_color"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:layout_marginStart="@dimen/common_20_dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="@dimen/common_15_dp"
+                        android:layout_height="@dimen/common_15_dp"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/bg_ovel"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_15_dp"
+                            android:text="@string/from"
+                            android:textColor="@color/black"
+                            />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txvSource"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_15_dp"
+                            android:text="@string/source_address"
+                            android:textColor="@color/history_text_color"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_50_dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/common_20_dp"
+                        android:layout_height="@dimen/common_20_dp"
+                        android:src="@drawable/ic_marker"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:scaleType="fitXY"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_15_dp"
+                            android:text="@string/destination"
+                            android:textColor="@color/black"
+                            />
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvDestination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_15_dp"
+                            android:text="@string/destination_address"
+                            android:textColor="@color/history_text_color"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_0_7_dp"
+                android:background="@color/gray"
+                android:layout_marginTop="@dimen/common_10_dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

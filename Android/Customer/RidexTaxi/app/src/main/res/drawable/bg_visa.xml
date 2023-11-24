@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape
+            android:padding="0dp"
+            android:shape="rectangle">
+            <solid android:color="#385F78" />
+            <corners android:radius="@dimen/common_5_dp" />
+        </shape>
+    </item>
+    <item
+        android:bottom="@dimen/common_3_dp"
+        android:drawable="@drawable/visa"
+        android:left="@dimen/common_3_dp"
+        android:right="@dimen/common_3_dp"
+        android:top="@dimen/common_3_dp">
+
+    </item>
+</layer-list>

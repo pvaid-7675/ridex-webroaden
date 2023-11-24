@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    android:background="@color/bg_color"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/common_10_dp"
+        android:layout_marginEnd="@dimen/common_10_dp"
+        android:layout_marginBottom="@dimen/common_10_dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_10_dp"
+            android:layout_marginLeft="@dimen/common_10_dp"
+            android:orientation="vertical">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/navImgProfilePhoto"
+                android:layout_width="@dimen/common_75_dp"
+                android:layout_height="@dimen/common_75_dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_driver_profile"
+                app:riv_corner_radius="30dip"
+                app:riv_mutate_background="true"
+                app:riv_oval="true" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/navTxtProfileName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navImgProfilePhoto"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:text="User Name"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_16_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/navTxtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/navTxtProfileName"
+                android:fontFamily="@font/nunito"
+                android:text="Phone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_14_sp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/navSettings"
+                android:layout_width="28dp"
+                android:layout_height="@dimen/common_30_dp"
+                android:layout_alignBottom="@+id/navTxtProfileName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:layout_marginBottom="-20dp"
+                android:scaleType="fitXY"
+                android:padding="@dimen/common_2_dp"
+                android:src="@drawable/settings_menu_new"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

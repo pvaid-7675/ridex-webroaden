@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llLinear"
+    android:layout_width="@dimen/common_100_dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/common_10_dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgVehicle"
+        android:layout_width="@dimen/common_50_dp"
+        android:layout_height="@dimen/common_40_dp"
+        android:layout_gravity="center"
+        android:src="@drawable/taxi" />
+    <View
+        android:id="@+id/vwSelectVehicale"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/common_2_dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/common_5_dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:text="Auto"
+        android:textColor="@color/black"
+        android:textSize="9sp"
+       />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtVehicleTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/nunito_light"
+        android:text="7 min"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/common_10_sp" />
+</LinearLayout>

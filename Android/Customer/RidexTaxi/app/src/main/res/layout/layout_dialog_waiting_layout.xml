@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/common_35_dp"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/common_7_dp"
+        app:cardElevation="@dimen/common_2_dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/common_16_sp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_clock_waiting"
+                android:drawableLeft="@drawable/ic_clock_waiting"
+                android:drawablePadding="@dimen/common_16_dp"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:text="@string/request_ongoing"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/common_16_sp" />
+
+            <ProgressBar
+                style="@style/Base.Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_16_dp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/please_wait_msg"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/common_18_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/we_find_best_driver_for_you"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_16_sp" />
+
+            <!-- <Button
+                 android:id="@+id/waitingDialogButtonCancel"
+                 style="@style/buttonStyle"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/common_16_dp"
+                 android:text="@string/cancel" />-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

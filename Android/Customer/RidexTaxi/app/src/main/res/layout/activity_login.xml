@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/common_16_dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_15_dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_red_border"
+                    android:gravity="center"
+                    android:padding="@dimen/common_10_dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_google" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llFacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:layout_marginLeft="@dimen/common_10_dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_rounded_blue_border"
+                    android:gravity="center"
+                    android:padding="@dimen/common_10_dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_facebook" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_30_dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/common_1_dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/gray" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/common_50_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white"
+                    android:src="@drawable/bg_or" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="@dimen/common_50_dp"
+                    android:layout_height="@dimen/common_50_dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="OR" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_numbwe_or_email" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmailOrMobile"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_0_5_dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:background="@color/colorText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/textViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                 />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/common_0_5_dp"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:background="@color/colorText" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtLogin"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:backgroundTint="@color/btn_color"
+                android:text="@string/login" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtForget"
+                style="@style/textViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorText" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

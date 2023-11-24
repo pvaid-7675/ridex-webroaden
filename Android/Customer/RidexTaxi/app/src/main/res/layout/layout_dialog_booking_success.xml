@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/common_35_dp"
+        android:background="@color/white"
+        app:cardElevation="@dimen/common_3_dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/common_5_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:background="@drawable/ic_booking_successful" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/common_10_dp"
+                android:text="@string/booking_successful"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtBookingContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:padding="@dimen/common_10_dp"
+                android:text="@string/booking_success_content"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_16_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtOk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/common_30_dp"
+                android:layout_marginRight="@dimen/common_30_dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/ok"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/common_16_sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

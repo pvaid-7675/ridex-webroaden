@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.speedride.customer.com.speedride.customer.modules.main.view.fragment.PickUpArrivingFragment">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/RlSearch"
+        layout="@layout/layout_search" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:theme="@style/AppTheme.FloatingAccentButtonOverlay"
+            app:srcCompat="@drawable/ic_current_location" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/llCoordinatorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fabCurrentLocation"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/llBottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llDriverDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorDefault"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/common_10_dp">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/imgDriver"
+                        android:layout_width="@dimen/common_75_dp"
+                        android:layout_height="@dimen/common_75_dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/taxi_driver"
+                        app:riv_border_color="@color/white"
+                        app:riv_border_width="@dimen/common_1_dp"
+                        app:riv_oval="true" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_10_dp"
+                        android:visibility="visible"
+                        android:layout_marginStart="@dimen/common_10_dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtDriverName"
+                            android:layout_width="@dimen/common_100_dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="John Doe"
+                            android:textColor="@color/colorText"
+                            android:textSize="@dimen/common_18_sp"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/scheduled"
+                            android:textColor="@color/green"
+                            android:textSize="@dimen/common_14_sp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtDriverName">
+
+                            <RatingBar
+                                android:id="@+id/ratingTaxi"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/common_5_dp"
+                                android:rating="4.5" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtRate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/ratingTaxi"
+                                android:layout_marginLeft="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_5_dp"
+                                android:layout_marginTop="@dimen/common_5_dp"
+                                android:layout_toEndOf="@+id/ratingTaxi"
+                                android:layout_toRightOf="@+id/ratingTaxi"
+                                android:fontFamily="@font/nunito_semibold"
+                                android:text="4.5"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="@dimen/common_12_sp" />
+
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTaxiName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ratingTaxi"
+                                android:layout_marginTop="@dimen/common_5_dp"
+                                android:text="@string/toyota_prius_gv8042_mini_white"
+                                android:textColor="@color/light_gray"
+                                android:textSize="@dimen/common_14_sp" />
+
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgCall"
+                                android:layout_width="@dimen/common_50_dp"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/common_5_dp"
+                                android:layout_marginEnd="@dimen/common_50_dp"
+                                android:src="@drawable/call" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgChat"
+                                android:layout_width="@dimen/common_50_dp"
+                                android:layout_height="@dimen/common_40_dp"
+                                android:layout_alignParentRight="true"
+                                android:padding="@dimen/common_5_dp"
+                                android:layout_marginStart="@dimen/common_25_dp"
+                                android:src="@drawable/chat_home" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/llPickUpBottom"
+                    layout="@layout/layout_pickup_bottom"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </RelativeLayout>
+</FrameLayout>

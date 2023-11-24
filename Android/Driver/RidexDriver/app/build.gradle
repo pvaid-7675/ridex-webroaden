@@ -1,0 +1,131 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-android-extensions'
+}
+
+android {
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.speedride.driver"
+        minSdkVersion 28
+        targetSdkVersion 33
+        versionCode 8
+        versionName "1.7"
+       // testInstrumentationRunner "androidx.history_new_item.xml.xml.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures{
+        viewBinding true
+        dataBinding true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.fragment:fragment-ktx:1.5.5'
+    implementation 'androidx.activity:activity-ktx:1.6.1'
+
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.1.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.0.3'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+
+
+    /**
+     retrofit
+     */
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.google.code.gson:gson:2.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.7'
+
+
+    /**
+    google api
+    */
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-messaging:23.1.0'
+    implementation 'com.google.firebase:firebase-bom:31.0.3'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.2.0'
+
+    /*facebook api*/
+    //implementation 'com.facebook.android:facebook-android-sdk:8.1.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+    implementation 'com.facebook.android:facebook-login:15.1.0'
+
+
+    /*socket io*/
+    implementation('io.socket:socket.io-client:1.0.2') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.0-alpha02"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.6.0-alpha02"
+
+    implementation "androidx.room:room-runtime:2.4.3"
+    implementation "androidx.room:room-ktx:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    implementation "androidx.paging:paging-runtime-ktx:3.1.1"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+
+    /**
+     * Hilt dependencies
+     */
+
+    implementation 'com.google.dagger:hilt-android:2.42'
+    kapt 'com.google.dagger:hilt-android-compiler:2.42'
+
+    // Coil
+    implementation "io.coil-kt:coil:1.2.2"
+
+    testImplementation 'junit:junit:4.13.2'
+   // androidTestImplementation 'androidx.history_new_item.xml.xml:runner:1.4.0'
+   // androidTestImplementation 'androidx.history_new_item.xml.xml.espresso:espresso-core:3.4.0'
+
+    implementation 'com.github.Drjacky:ImagePicker:2.3.22'
+}

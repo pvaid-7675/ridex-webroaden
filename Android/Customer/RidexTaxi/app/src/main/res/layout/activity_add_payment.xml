@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.speedride.customer.base.modules.payment.view.activity.AddPaymentActivity">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_200_dp"
+        android:layout_margin="@dimen/common_16_dp"
+        android:background="@drawable/bg_visa"
+        android:padding="@dimen/common_20_dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtCardNumber"
+            android:text="CARD NUMBER"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/common_12_sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="9922 4123 1212 4587"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/common_20_sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCardHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CARD HOLDER"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_10_sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCardHolder"
+                android:text="JHON DUE"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/common_16_sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtExpires"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EXPIRES"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_10_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMMYY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtExpires"
+                    android:text="MM/YY"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/common_16_sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpAddPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCardNumber"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:overScrollMode="never" />
+
+</LinearLayout>

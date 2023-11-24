@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="35dp"
+        android:background="@color/white"
+        app:cardElevation="@dimen/common_3_dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/common_5_dp">
+
+        <LinearLayout
+            android:id="@+id/llFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/common_20_dp"
+                android:background="@drawable/ic_ride_cancel" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_semibold"
+                android:gravity="center"
+                android:padding="@dimen/common_10_dp"
+                android:text="@string/booking_cancel"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtBookingContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:padding="@dimen/common_10_dp"
+                android:text="@string/booking_cancel_content"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/common_16_sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/common_16_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:gravity="right">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/common_16_dp"
+                    android:layout_marginRight="@dimen/common_16_dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/no"
+                    android:textColor="@color/light_gray"
+                    android:textSize="@dimen/common_16_sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="@string/yes"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/common_16_sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

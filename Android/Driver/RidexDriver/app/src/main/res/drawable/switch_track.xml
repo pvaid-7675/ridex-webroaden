@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:gravity="center_vertical|fill_horizontal"
+        android:left="@dimen/common_4_dp"
+        android:right="@dimen/common_4_dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:dither="true"
+            android:shape="rectangle"
+            android:useLevel="false"
+            android:visible="true">
+            <solid android:color="@color/button_after_click" />
+            <corners android:radius="@dimen/common_15_dp" />
+            <size
+                android:width="@dimen/common_50_dp"
+                android:height="@dimen/common_15_dp" />
+        </shape>
+    </item>
+
+</layer-list>

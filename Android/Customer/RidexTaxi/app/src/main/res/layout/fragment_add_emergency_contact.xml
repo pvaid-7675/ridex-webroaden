@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDefault"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewContacts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnAddContact" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnAddContact"
+            style="@style/buttonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/common_16_dp"
+            android:layout_marginTop="@dimen/common_16_dp"
+            android:layout_marginEnd="@dimen/common_16_dp"
+            android:layout_marginBottom="@dimen/common_16_dp"
+            android:gravity="center"
+            android:text="@string/add"
+            android:background="@color/btn_color"
+            android:textAllCaps="true" />
+    </RelativeLayout>
+</LinearLayout>

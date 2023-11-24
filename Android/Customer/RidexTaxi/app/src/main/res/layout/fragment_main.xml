@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.speedride.customer.com.speedride.customer.modules.main.view.fragment.MainFragment">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/RlSearch"
+        layout="@layout/layout_search" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMarkerGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_20_dp"
+            android:src="@drawable/pin_pickup" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgMarkerRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/common_20_dp"
+            android:src="@drawable/pin_dropoff"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:theme="@style/AppTheme.FloatingAccentButtonOverlay"
+            app:srcCompat="@drawable/ic_current_location" />
+
+        <LinearLayout
+            android:id="@+id/llLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fabCurrentLocation"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_select_vehicle"
+                layout="@layout/layout_select_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/layout_bottom"
+                layout="@layout/layout_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llLayout"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtRideNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_color"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/ride_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_10_sp"
+                android:layout_weight="1"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="@dimen/common_3_dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtRideSchedule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_color"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/schedule_ride"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_10_sp"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:visibility="visible" />
+
+            <View
+                android:layout_width="@dimen/common_3_dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorTransparent"
+                android:visibility="visible"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtRideShared"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/btn_color"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/shared_ride"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_10_sp"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+<!--        <androidx.appcompat.widget.AppCompatTextView-->
+<!--            android:id="@+id/txtRideNow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/llLayout"-->
+<!--            android:background="@color/btn_color"-->
+<!--            android:gravity="center"-->
+<!--            android:padding="@dimen/common_16_dp"-->
+<!--            android:text="@string/ride_now"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="@dimen/common_16_sp"-->
+<!--            android:visibility="visible" />-->
+
+        <LinearLayout
+            android:id="@+id/llCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llLayout"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCancelNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cancel_ripple"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/cancel"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/common_16_sp"
+                android:visibility="visible" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ripple_effect"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/next"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_16_sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llLayout"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_cancel_ripple"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/cancel"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/common_16_sp"
+                tools:targetApi="jelly_bean" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtConfirmBook"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_ripple_effect"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:padding="@dimen/common_16_dp"
+                android:text="@string/confirm_book"
+                android:textColor="@color/white"
+                android:textSize="@dimen/common_16_sp"
+                android:clickable="true"
+                tools:targetApi="jelly_bean" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

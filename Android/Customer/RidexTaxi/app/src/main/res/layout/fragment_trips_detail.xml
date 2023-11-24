@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <!--display map-->
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llDuration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/common_16_dp"
+                    android:layout_marginLeft="@dimen/common_16_dp"
+                    android:layout_marginTop="@dimen/common_16_dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="07 June 2018 at 12:10 PM"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_18_sp"
+                        android:textStyle="bold" />
+
+
+                    <!--<androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/capsule_button"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/common_7_dp"
+                        android:paddingEnd="@dimen/common_5_dp"
+                        android:paddingLeft="@dimen/common_12_dp"
+                        android:paddingRight="@dimen/common_5_dp"
+                        android:paddingStart="@dimen/common_12_dp"
+                        android:paddingTop="@dimen/common_7_dp"
+                        android:text="$15.55"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/common_12_sp" />-->
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/common_16_dp"
+                    android:paddingTop="@dimen/common_8_dp"
+                    android:paddingRight="@dimen/common_16_dp"
+                    android:paddingBottom="@dimen/common_8_dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgPickUp"
+                        android:layout_width="@dimen/common_15_dp"
+                        android:layout_height="@dimen/common_15_dp"
+                        android:layout_marginTop="@dimen/common_7_dp"
+                        android:src="@drawable/ic_green_circle" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPickupLocationb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/common_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginTop="@dimen/common_2_dp"
+                        android:layout_toEndOf="@id/imgPickUp"
+                        android:layout_toRightOf="@id/imgPickUp"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="@string/pick_up_location"
+                        android:textSize="@dimen/common_10_sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPickUpAddres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/txtPickupLocationb"
+                        android:layout_marginStart="@dimen/common_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginTop="@dimen/common_1_dp"
+                        android:layout_toEndOf="@id/imgPickUp"
+                        android:layout_toRightOf="@id/imgPickUp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="102,Residency,Nr garden, Prahalad nagar, Ahmedabad-38005"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_12_sp" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgDrop"
+                        android:layout_width="@dimen/common_15_dp"
+                        android:layout_height="@dimen/common_15_dp"
+                        android:layout_below="@id/txtPickUpAddres"
+                        android:layout_marginTop="@dimen/common_15_dp"
+                        android:src="@drawable/ic_pin_yellow" />
+
+                    <View
+                        android:layout_width="@dimen/common_4_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/imgDrop"
+                        android:layout_below="@+id/imgPickUp"
+                        android:layout_marginStart="@dimen/common_5_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_5_dp"
+                        android:layout_marginTop="@dimen/common_minus_4_dp"
+                        android:layout_marginBottom="@dimen/common_minus_10_dp"
+                        android:background="@drawable/green_vertical_line_dot" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDropLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPickUpAddres"
+                        android:layout_marginStart="@dimen/common_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginTop="@dimen/common_5_dp"
+                        android:layout_toEndOf="@+id/imgDrop"
+                        android:layout_toRightOf="@+id/imgDrop"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="@string/drag_off_location"
+                        android:textSize="@dimen/common_10_sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDropAddres"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDropLocation"
+                        android:layout_marginStart="@dimen/common_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_marginTop="@dimen/common_1_dp"
+                        android:layout_marginBottom="@dimen/common_10_dp"
+                        android:layout_toEndOf="@id/imgDrop"
+                        android:layout_toRightOf="@id/imgDrop"
+                        android:fontFamily="@font/nunito_bold"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_12_sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDriverDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_15_dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_width="@dimen/common_100_dp"
+                    android:layout_height="@dimen/common_100_dp"
+                    android:layout_marginStart="@dimen/common_7_dp"
+                    android:layout_marginLeft="@dimen/common_7_dp"
+                    android:padding="@dimen/common_10_dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/taxi_driver"
+                    app:riv_border_color="@color/white"
+                    app:riv_border_width="@dimen/common_1_dp"
+                    app:riv_oval="true" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDriverName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="John Doe"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_22_sp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingTaxi"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDriverName"
+                        android:rating="4.5" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDriverName"
+                        android:layout_alignBaseline="@+id/ratingTaxi"
+                        android:layout_marginStart="@dimen/common_5_dp"
+                        android:layout_marginLeft="@dimen/common_5_dp"
+                        android:layout_toEndOf="@+id/ratingTaxi"
+                        android:layout_toRightOf="@+id/ratingTaxi"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:text="You Rated"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_12_sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_15_dp"
+                android:background="@color/white"
+                android:padding="@dimen/common_16_dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtBillDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Bill Details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_18_sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txtBillDetails"
+                    android:layout_marginEnd="@dimen/common_2_dp"
+                    android:layout_marginRight="@dimen/common_2_dp"
+                    android:layout_toEndOf="@+id/txtBillDetails"
+                    android:layout_toRightOf="@+id/txtBillDetails"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:text=" (Cash Payment)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_12_sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/common_16_dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtRideFare"
+                        android:layout_width="@dimen/common_0_dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:gravity="start"
+                        android:text="Ride Fare"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_16_sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_semibold"
+                        android:gravity="end"
+                        android:text=" $10.10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/common_16_sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

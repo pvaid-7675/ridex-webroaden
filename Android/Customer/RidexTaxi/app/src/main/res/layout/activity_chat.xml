@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/gray"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbar"
+        android:id="@+id/rvChatList"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/llBottomSheet"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/llBottomSheet"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/common_40_dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/common_10_dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/common_10_dp"
+
+        android:layout_marginEnd="@dimen/common_10_dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivCamera"
+            android:layout_width="@dimen/common_30_dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/camera_chat"
+            android:layout_marginStart="@dimen/common_5_dp"
+            />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/common_5_dp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtMessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Message"
+            android:textColor="@color/black"
+            android:padding="@dimen/common_2_dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/common_5_dp"
+            android:layout_marginStart="@dimen/common_10_dp"
+            android:layout_marginBottom="@dimen/common_5_dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivAttachment"
+                android:layout_width="@dimen/common_15_dp"
+                android:layout_height="@dimen/common_15_dp"
+                android:src="@drawable/attachment"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/common_5_dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSendCamera"
+                android:layout_width="@dimen/common_15_dp"
+                android:layout_height="@dimen/common_15_dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="@dimen/common_8_dp"
+                android:layout_marginTop="@dimen/common_5_dp"
+                android:layout_marginEnd="@dimen/common_5_dp"
+                android:src="@drawable/camera_chat"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSendMsg"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/send_chat"
+            android:padding="@dimen/common_2_dp"
+            android:layout_marginStart="@dimen/common_5_dp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

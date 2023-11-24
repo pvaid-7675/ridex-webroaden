@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSendMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llMyMsg"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/common_10_dp"
+            android:layout_marginEnd="@dimen/common_100_dp"
+            android:background="@drawable/chat_background"
+            android:layout_marginTop="@dimen/common_10_dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReceiveUserName"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Sender Sender Sender Sender Sender Sender Sender Sender Sender Sender "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/common_12_sp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReceiverTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:text="4:50 PM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/common_12_sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvReceiveMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_16_sp"
+                    android:text="Hiii tvSenderMsg tvSenderMsg tvSenderMsg tvSenderMsg"
+
+                    android:layout_marginEnd="@dimen/common_10_dp"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_10_dp"
+
+                    android:textColor="@color/black" />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivReceiverImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/common_10_dp"
+                    android:layout_marginStart="@dimen/common_10_dp"
+                    android:layout_marginBottom="@dimen/common_10_dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rlReceive"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="75dp"
+        android:orientation="vertical"
+        android:background="@drawable/chat_background"
+        android:layout_marginTop="@dimen/common_15_dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvSenderUserName"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_10_dp"
+                android:text="Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver Receiver "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/common_12_sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/tvSenderTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_10_dp"
+                android:text="4:30 PM"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_12_sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_10_dp"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/common_10_dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="@dimen/common_10_dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+
+                android:id="@+id/tvSenderMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/common_10_dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:text="Hiii tvSenderMsg tvSenderMsg tvSenderMsg tvSenderMsg"
+                android:textColor="@color/black"
+                android:textSize="@dimen/common_16_sp" />
+
+            <ImageView
+                android:id="@+id/ivSenderImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_10_dp"
+                android:layout_marginTop="@dimen/common_25_dp"
+                android:layout_marginEnd="@dimen/common_10_dp"
+                android:layout_marginBottom="@dimen/common_10_dp"
+                android:scaleType="fitXY"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

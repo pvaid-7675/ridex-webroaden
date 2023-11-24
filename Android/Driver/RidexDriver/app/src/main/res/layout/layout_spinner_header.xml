@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableEnd="@mipmap/ic_drop_down"
+    android:drawableRight="@mipmap/ic_drop_down"
+    android:fontFamily="@font/nunito_semibold"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/common_5_dp"
+    android:paddingTop="@dimen/common_5_dp"
+    android:textColor="@color/black"
+    android:textSize="@dimen/common_15_sp">
+
+</TextView>

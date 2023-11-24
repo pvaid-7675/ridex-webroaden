@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<android.support.v7.widget.CardView
+        android:id="@+id/cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardElevation="@dimen/common_2_dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="@dimen/common_3_dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/llPickUp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorDefault"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_5_dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rlPickUp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7"
+                    tools:ignore="NestedWeights">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPickUpTitle"
+                        style="@style/textViewMapSearchTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="PICKUP LOCATION" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPickUp"
+                        style="@style/autoScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtPickUpTitle"
+                        android:text="Pick Up Location" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPickUpSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/ic_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDropOff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="@dimen/common_5_dp"
+                android:weightSum="2">
+
+                <RelativeLayout
+                    android:id="@+id/rlDropOff"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.7">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDropOffTitle"
+                        style="@style/textViewMapSearchTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DROP OFF LOCATION" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDrop"
+                        style="@style/autoScroll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtDropOffTitle"
+                        android:text="Drop Off Address" />
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDropOffSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/ic_search"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/common_10_dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/common_2_dp"
+            app:cardElevation="@dimen/common_4_dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/common_16_dp"
+                android:layout_marginLeft="@dimen/common_16_dp"
+                android:layout_marginEnd="@dimen/common_15_dp"
+                android:layout_marginRight="@dimen/common_16_dp"
+                android:paddingTop="@dimen/common_10_dp"
+                android:paddingBottom="@dimen/common_10_dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPickUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/common_1_dp"
+                    android:layout_marginLeft="@dimen/common_1_dp"
+                    android:src="@drawable/ic_pickup_location" />
+
+                <View
+                    android:id="@+id/viewVertical"
+                    android:layout_width="@dimen/common_5_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imgDrop"
+                    android:layout_below="@+id/imgPickUp"
+                    android:layout_marginStart="@dimen/common_5_5_dp"
+                    android:layout_marginLeft="@dimen/common_5_5_dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="@dimen/common_minus_10_dp"
+                    android:background="@drawable/green_vertical_line_dot" />
+
+                <RelativeLayout
+                    android:id="@+id/rlPickUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imgPickUp"
+                    android:layout_toEndOf="@id/imgPickUp"
+                    android:layout_toRightOf="@id/imgPickUp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPickUpTitle"
+                                style="@style/textViewMapSearchTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/common_15_dp"
+                                android:layout_marginLeft="@dimen/common_15_dp"
+                                android:text="PICKUP LOCATION" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPickUp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginLeft="15dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/nunito_semibold"
+                                android:maxLines="2"
+                                android:text="Select pickup address"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_12_sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgPickUpSearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_search"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDrop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlPickUp"
+                    android:layout_marginStart="@dimen/common_2_dp"
+                    android:layout_marginLeft="@dimen/common_2_dp"
+                    android:layout_marginTop="@dimen/common_10_dp"
+                    android:src="@drawable/ic_drop_location" />
+
+                <RelativeLayout
+                    android:id="@+id/rlDropOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imgDrop"
+                    android:layout_marginTop="-3dp"
+                    android:layout_toEndOf="@id/imgDrop"
+                    android:layout_toRightOf="@id/imgDrop">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDropOffTitle"
+                                style="@style/textViewMapSearchTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/common_16_dp"
+                                android:layout_marginLeft="@dimen/common_16_dp"
+                                android:text="DROP OFF LOCATION" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDrop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/common_16_dp"
+                                android:layout_marginLeft="@dimen/common_16_dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/nunito_semibold"
+                                android:maxLines="2"
+                                android:text="Select drop off address"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/common_12_sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgDropOffSearch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_search"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llSchedule_date_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rlDropOff"
+                        android:layout_marginTop="@dimen/common_15_dp"
+                        android:visibility="gone"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtDateTime"
+                            style="@style/textViewMapSearchTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/common_20_dp"
+                            android:layout_marginLeft="@dimen/common_20_dp"
+                            android:text="@string/schedule_ride_date_time"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtShowDateTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginStart="@dimen/common_20_dp"
+                                android:layout_marginLeft="@dimen/common_20_dp"
+                                android:ellipsize="end"
+                                android:textSize="@dimen/common_12_sp"
+                                android:text="@string/schedule_ride_date_time"
+                                android:layout_marginTop="@dimen/common_5_dp"
+                                android:fontFamily="@font/nunito_semibold"
+                                />
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/ivCalender"
+                                    android:layout_width="@dimen/common_25_dp"
+                                    android:layout_height="@dimen/common_25_dp"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_clock_time"
+                                    android:layout_alignParentRight="true"
+                                    />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

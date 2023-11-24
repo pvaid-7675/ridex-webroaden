@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "56404340443",
+    "project_id": "speedridecustomer",
+    "storage_bucket": "speedridecustomer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56404340443:android:2df8c90d3a8c16999866fe",
+        "android_client_info": {
+          "package_name": "com.speedride.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56404340443-hpj93hnindosuq3dpfnlljfqsglcknk5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.speedride.customer",
+            "certificate_hash": "dc4ec9523c3dc31d864647bc69251d3664ece4b0"
+          }
+        },
+        {
+          "client_id": "56404340443-ahluujavvb5aukh4thih2bdqk7vpk1ig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkdKNTxnSRLiuPBWTWSeQVZY2lZlgMNh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56404340443-ahluujavvb5aukh4thih2bdqk7vpk1ig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
